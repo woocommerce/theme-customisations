@@ -1,3 +1,3 @@
 jQuery(document).ready(function($){
-	// js goes here
+	// JS goes here
 });
