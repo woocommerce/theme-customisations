@@ -29,7 +29,7 @@ final class Theme_Customisations {
 	 * Setup all the things
 	 */
 	public function theme_customisations_setup() {
-		add_action( 'wp_enqueue_scripts', array( $this, 'theme_customisations_css' ) );
+		add_action( 'wp_enqueue_scripts', array( $this, 'theme_customisations_css' ), 999 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'theme_customisations_js' ) );
 
 		require_once( 'custom/functions.php' );
