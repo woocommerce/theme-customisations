@@ -57,7 +57,7 @@ final class Theme_Customisations {
 	 * This works for the top level templates (IE single.php, page.php etc). However, it doesn't work for
 	 * template parts yet (content.php, header.php etc).
 	 *
-	 * Relevant trac tricket; https://core.trac.wordpress.org/ticket/13239
+	 * Relevant trac ticket; https://core.trac.wordpress.org/ticket/13239
 	 *
 	 * @param  string $template template string.
 	 * @return string $template new template string.
