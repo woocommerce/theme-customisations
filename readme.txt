@@ -10,6 +10,7 @@ A very simple plugin to house theme (or plugin) customisations. Think of this as
 
 * Add any CSS snippets to `custom/style.css`.
 * Add any PHP snippets to `custom/functions.php`.
+* Add any JS snippets to `custom/custom.js`.
 * Add custom top level template files (page.php, single.php etc) to `custom/templates/`.
 * Activate the plugin.
 
