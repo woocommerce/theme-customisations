@@ -8,10 +8,10 @@ A very simple plugin to house theme (or plugin) customisations. Think of this as
 
 == Usage ==
 
-* Add any CSS snippets to `custom/style.css`.
-* Add any PHP snippets to `custom/functions.php`.
-* Add any JS snippets to `custom/custom.js`.
-* Add custom top level template files (page.php, single.php etc) to `custom/templates/`.
+* Add any CSS snippets to `custom/style.css`. This file is found in this plugin.
+* Add any PHP snippets to `custom/functions.php`. This file is found in this plugin.
+* Add any JS snippets to `custom/custom.js`. This file is found in this plugin.
+* Add custom top level template files (page.php, single.php etc) to `custom/templates/`. You will need to create the templates folder.
 * Activate the plugin.
 
 Simple!
