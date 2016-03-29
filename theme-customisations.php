@@ -1,15 +1,20 @@
 <?php
 /**
- * Plugin Name: Theme Customisations
- * Description: A very simple plugin to house theme (or plugin) customisations.
- * Version: 	1.0.0
- * Author: 		WooThemes
- * Author URI: 	http://www.woothemes.com/
+ * Plugin Name:       Theme Customisations
+ * Description:       A handy little plugin to contain your theme customisation snippets.
+ * Plugin URI:        http://github.com/woothemes/theme-customisations
+ * Version:           1.0.0
+ * Author:            WooThemes
+ * Author URI:        http://www.woothemes.com/
+ * Requires at least: 3.0.0
+ * Tested up to:      4.4.2
  *
  * @package Theme_Customisations
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 
 /**
  * Main Theme_Customisations Class
@@ -21,7 +26,10 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  */
 final class Theme_Customisations {
 
-	public function __construct () {
+	/**
+	 * Set up the plugin
+	 */
+	public function __construct() {
 		add_action( 'init', array( $this, 'theme_customisations_setup' ), -1 );
 	}
 
@@ -38,6 +46,7 @@ final class Theme_Customisations {
 
 	/**
 	 * Enqueue the CSS
+	 *
 	 * @return void
 	 */
 	public function theme_customisations_css() {
@@ -46,6 +55,7 @@ final class Theme_Customisations {
 
 	/**
 	 * Enqueue the Javascript
+	 *
 	 * @return void
 	 */
 	public function theme_customisations_js() {
@@ -69,11 +79,11 @@ final class Theme_Customisations {
 
 		return $template;
 	}
-
 } // End Class
 
 /**
  * The 'main' function
+ *
  * @return void
  */
 function __theme_customisations_main() {
