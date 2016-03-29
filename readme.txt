@@ -13,7 +13,7 @@ A handy little plugin to contain your theme customisation snippets.
 
 Think of this plugin as an alternative to adding code snippets to the functions.php, or style.css file in your child theme. Why? It keeps all of your changes in one location, independent of the other components that make up your web site. That means you can safely perform theme / plugin updates without the worry of losing your modifications as well as easily deactivating your customisations to check for conflicts.
 
-*Note:* This plugin doesn't actually do anything on it's own. It is purely a convenient place for you to store your own theme customistions.
+*Note:* This plugin doesn't actually do anything on it's own. It is purely a convenient place for you to store your own theme customisations.
 
 == Installation ==
 
