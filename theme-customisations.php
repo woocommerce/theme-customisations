@@ -31,6 +31,7 @@ final class Theme_Customisations {
 	 */
 	public function __construct() {
 		add_action( 'init', array( $this, 'theme_customisations_setup' ), -1 );
+		require_once( 'custom/functions.php' );
 	}
 
 	/**
@@ -40,8 +41,6 @@ final class Theme_Customisations {
 		add_action( 'wp_enqueue_scripts', array( $this, 'theme_customisations_css' ), 999 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'theme_customisations_js' ) );
 		add_filter( 'template_include', array( $this, 'theme_customisations_template' ), 11 );
-
-		require_once( 'custom/functions.php' );
 	}
 
 	/**
@@ -86,11 +85,11 @@ final class Theme_Customisations {
  *
  * @return void
  */
-function __theme_customisations_main() {
+function theme_customisations_main() {
 	new Theme_Customisations();
 }
 
 /**
  * Initialise the plugin
  */
-add_action( 'plugins_loaded', '__theme_customisations_main' );
+add_action( 'plugins_loaded', 'theme_customisations_main' );
