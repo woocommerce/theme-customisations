@@ -2,18 +2,18 @@
 Contributors: jameskoster, woothemes
 Tags: theme, edit, edits, customise, customisation, customize, customization, css, php, jquery
 Requires at least: 3.0.0
-Tested up to: 4.4.2
+Tested up to: 4.5.2
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A handy little plugin to contain your theme customisation snippets.
+A handy little plugin to contain your theme/plugin customisation snippets.
 
 == Description ==
 
 Think of this plugin as an alternative to adding code snippets to the functions.php, or style.css file in your child theme. Why? It keeps all of your changes in one location, independent of the other components that make up your web site. That means you can safely perform theme / plugin updates without the worry of losing your modifications as well as easily deactivating your customisations to check for conflicts.
 
-*Note:* This plugin doesn't actually do anything on it's own. It is purely a convenient place for you to store your own theme customisations.
+*Note:* This plugin doesn't actually do anything on it's own. It is purely a convenient place for you to store your own theme/plugin customisations.
 
 == Installation ==
 
@@ -28,6 +28,7 @@ Think of this plugin as an alternative to adding code snippets to the functions.
 * Add any PHP snippets to `custom/functions.php`. This file is found in this plugin.
 * Add any jQuery snippets to `custom/custom.js`. This file is found in this plugin.
 * Add custom top level template files (page.php, single.php etc) to `custom/templates/`. You will need to create the templates folder.
+* Add any WooCommerce template files to `custom/templates/woocommerce`. You will need to create the templates and woocommerce folders.
 * Activate the plugin.
 
 == Frequently Asked Questions ==

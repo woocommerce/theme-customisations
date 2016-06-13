@@ -40,8 +40,8 @@ final class Theme_Customisations {
 	public function theme_customisations_setup() {
 		add_action( 'wp_enqueue_scripts', array( $this, 'theme_customisations_css' ), 999 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'theme_customisations_js' ) );
-		add_filter( 'template_include', array( $this, 'theme_customisations_template' ), 11 );
-		add_filter( 'wc_get_template', array( $this, 'theme_customisations_wc_get_template' ), 11, 5 );
+		add_filter( 'template_include',   array( $this, 'theme_customisations_template' ), 11 );
+		add_filter( 'wc_get_template',    array( $this, 'theme_customisations_wc_get_template' ), 11, 5 );
 	}
 
 	/**
@@ -79,23 +79,24 @@ final class Theme_Customisations {
 
 		return $template;
 	}
-	
-	/** 
+
+	/**
 	 * Look in this plugin for WooCommerce template overrides.
-	 * 
+	 *
 	 * For example, if you want to override woocommerce/templates/cart/cart.php, you
-	 * can place the modified template in <plugindir>/custom/woocommerce/cart/cart.php
-	 * 
+	 * can place the modified template in <plugindir>/custom/templates/woocommerce/cart/cart.php
+	 *
 	 * @param string $located is the currently located template, if any was found so far.
 	 * @param string $template_name is the name of the template (ex: cart/cart.php).
 	 * @return string $located is the newly located template if one was found, otherwise
 	 *                         it is the previously found template.
 	 */
 	public function theme_customisations_wc_get_template( $located, $template_name, $args, $template_path, $default_path ) {
-		$plugin_template_path = untrailingslashit( plugin_dir_path( __FILE__ ) ) . '/custom/woocommerce/' . $template_name;
+		$plugin_template_path = untrailingslashit( plugin_dir_path( __FILE__ ) ) . '/custom/templates/woocommerce/' . $template_name;
 
-		if( file_exists($plugin_template_path) )
+		if ( file_exists( $plugin_template_path ) ) {
 			$located = $plugin_template_path;
+		}
 
 		return $located;
 	}
