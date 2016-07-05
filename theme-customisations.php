@@ -5,7 +5,7 @@
  * Plugin URI:        http://github.com/woothemes/theme-customisations
  * Version:           1.0.0
  * Author:            WooThemes
- * Author URI:        http://www.woothemes.com/
+ * Author URI:        https://www.woocommerce.com/
  * Requires at least: 3.0.0
  * Tested up to:      4.4.2
  *
