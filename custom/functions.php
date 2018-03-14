@@ -3,7 +3,7 @@
  * Functions.php
  *
  * @package  Theme_Customisations
- * @author   WooThemes
+ * @author   Automattic
  * @since    1.0.0
  */
 
