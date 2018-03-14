@@ -1,9 +1,9 @@
 === Theme Customisations ===
-Contributors: jameskoster, woothemes
+Contributors: jameskoster, automattic
 Tags: theme, edit, edits, customise, customisation, customize, customization, css, php, jquery
 Requires at least: 3.0.0
-Tested up to: 4.5.2
-Stable tag: 1.0.0
+Tested up to: 4.9.4
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
