@@ -31,7 +31,7 @@ final class Theme_Customisations {
 	 */
 	public function __construct() {
 		add_action( 'init', array( $this, 'theme_customisations_setup' ), -1 );
-		require_once( 'custom/functions.php' );
+		require_once( __DIR__ . '/custom/functions.php' );
 	}
 
 	/**
